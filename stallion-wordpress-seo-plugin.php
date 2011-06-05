@@ -253,7 +253,7 @@ else {
 <h2><?php _e('Stallion WordPress SEO Plugin Tutorial') ?></h2>
 
 <div style="float:right;">
-<a href="http://www.stallion-theme.com/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/stallion-wordpress-seo/stallion-300-250.gif" alt="Stallion SEO Ad Theme" width="300" /></a>
+<a href="http://www.stallion-theme.com/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/stallion-wordpress-seo-plugin/stallion-300-250.gif" alt="Stallion SEO Ad Theme" width="300" /></a>
 </div>
 
 <p>The page types blocked above will still be spidered by Google etc..., but those pages will NOT be indexed (they will not be found for relevant searches). Links from those blocked pages will be followed, but the link benefit that would be wasted if you noindexed archives etc... is redirected back to the home page or the non paged category/tag/search result.</p>
