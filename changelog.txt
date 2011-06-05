@@ -1,0 +1,4 @@
+Version 1.0
+2011-06-05 David Law : http://www.stallion-theme.com/
+
+* First release of Stallion WordPress SEO Plugin
