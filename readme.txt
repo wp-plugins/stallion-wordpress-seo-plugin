@@ -69,7 +69,7 @@ By adding targeted canonical URLs to sections of a WordPress site we do not want
 
 You can use the built in WordPress plugin installer (under 'Plugins >> Add New : Upload') and plugin upgrader, or you can install the Stallion WordPress SEO plugin manually using FTP.
 
-1. Upload the `stallion-wordress-seo` folder to the `/wp-content/plugins/` directory using FTP
+1. Upload the `stallion-wordress-seo-plugin` folder to the `/wp-content/plugins/` directory using FTP
 2. Activate the Stallion WordPress SEO plugin through the 'Plugins' menu in WordPress
 3. Configure the SEO plugin by going to the 'Stallion WordPress SEO' menu under the 'Settings' menu
 
@@ -81,7 +81,7 @@ The first release of the Stallion WordPress SEO Plugin only deals with protectin
 
 If this SEO plugin becomes popular I'll see if I can add title element type manipulation in the future.
 
-You can safely use this plugin alongside other WordPress SEO plugins, for it to work correctly you should disable all nofollow and noindex features of other WordPress SEO plugins. Some of the features of the Yoast WordPress SEO Plugin and the All in One SEO Pack WordPress Plugin are useful, it's the nofollow and noindex options that should be disabled.
+You can safely use this plugin alongside other WordPress SEO plugins, for it to work correctly you should disable all nofollow and noindex features of other WordPress SEO plugins and turn off their canonical URL features. Some of the features of the Yoast WordPress SEO Plugin and the All in One SEO Pack WordPress Plugin are useful, it's the nofollow and noindex options that should be disabled.
 
 == Screenshots ==
 
