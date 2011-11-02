@@ -1,12 +1,12 @@
 === Stallion WordPress SEO Plugin ===
 Contributors: seo-dave
 Donate link: http://www.stallion-theme.com/stallion-wordpress-seo-plugin
-Tags: canonical, noindex, nofollow, wordpress seo, seo, meta, google, search engine optimization, search engine, pagerank, link benefit
+Tags: seo, wordpress seo, canonical, noindex, nofollow, meta, google, search engine optimization, search engine, pagerank, link benefit
 Requires at least: 3.0
-Tested up to: 3.1.4
-Stable tag: 1.0
+Tested up to: 3.2.1
+Stable tag: 1.0.1
 
-The Stallion WordPress SEO Plugin was created to replace the WordPress SEO plugins that damage a sites SEO efforts. Nofollow/noindex damages SEO!
+The Stallion WordPress SEO Plugin was created to enhance the WordPress SEO plugins that damage a sites SEO efforts. Nofollow/noindex damages SEO!
 
 == Description ==
 
@@ -86,6 +86,9 @@ You can safely use this plugin alongside other WordPress SEO plugins, for it to 
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.1 =
+* Small code change to remove PHP warnings (Use of Undefined Constant), had missed out '' around a few constants.
 
 = 1.0 =
 * First release.
