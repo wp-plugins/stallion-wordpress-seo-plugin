@@ -1,9 +1,0 @@
-Version 1.0.1
-2011-11-02 David Law : http://www.stallion-theme.com/
-
-* Small code change to remove PHP warnings (Use of Undefined Constant), had missed out '' around a few constants.
-
-Version 1.0
-2011-06-05 David Law : http://www.stallion-theme.com/
-
-* First release of Stallion WordPress SEO Plugin
