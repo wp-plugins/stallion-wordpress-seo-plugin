@@ -3,7 +3,7 @@
 Plugin Name: Stallion WordPress SEO Plugin
 Plugin URI: http://www.stallion-theme.com/stallion-wordpress-seo-plugin
 Description: Block search engines like Google from indexing sections/pages of your site without deleting valuable link benefit via canonical URLs rather than noindex and nofollow. Other so called WordPress SEO plugins damage your sites search engine optimization by using nofollow (deletes link benefit) and noindex (wastes link benefit). The Stallion WordPress SEO Plugin uses canonical URLs to conserve link benefit.
-Version: 1.0
+Version: 1.0.1
 Author: David Law
 Author URI: http://www.stallion-theme.com/
 */
@@ -29,14 +29,14 @@ add_action('admin_menu', 'stallion_seo_plugin');
 add_action('login_head', 'st_seo_notindex_login');
 add_action('admin_head', 'st_seo_notindex_admin');
 add_action('wp_head', 'st_seo_notindex');
-add_option(st_seo_notindex_login, '2');
-add_option(st_seo_notindex_admin, '2');
-add_option(st_seo_notindex_date, '1');
-add_option(st_seo_notindex_author, '1');
-add_option(st_seo_notindex_search, '0');
-add_option(st_seo_notindex_tags, '0');
-add_option(st_seo_notindex_category, '0');
-add_option(st_seo_notindex_home, '1');
+add_option('st_seo_notindex_login', '2');
+add_option('st_seo_notindex_admin', '2');
+add_option('st_seo_notindex_date', '1');
+add_option('st_seo_notindex_author', '1');
+add_option('st_seo_notindex_search', '0');
+add_option('st_seo_notindex_tags', '0');
+add_option('st_seo_notindex_category', '0');
+add_option('st_seo_notindex_home', '1');
 
 function stallion_seo_plugin() {
 add_options_page('Stallion WordPress SEO Plugin Options', 'Stallion WordPress SEO', 8, __FILE__, 'stallion_seo_plugin_admin');
