@@ -1,3 +1,10 @@
+Version 2.0
+2013-09-24 David Law : http://www.stallion-theme.com/
+
+* fixed some depreciated code.
+* finished the block individual posts/pages feature.
+* added canonical support for paged comments.
+
 Version 1.0.1
 2011-11-02 David Law : http://www.stallion-theme.com/
 
