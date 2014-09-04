@@ -1,9 +1,9 @@
 === Stallion WordPress SEO Plugin ===
 Contributors: seo-dave
-Donate link: http://www.stallion-theme.com/stallion-wordpress-seo-plugin
+Donate link: http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/
 Tags: seo, wordpress seo, canonical, noindex, nofollow, meta, google, search engine optimization, search engine, pagerank, link benefit, seo plugin, wordpress seo plugin
 Requires at least: 3.0
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,7 +16,7 @@ There are several very popular WordPress Plugins including the Yoast WordPress S
 
 Webmasters spend a lot of their SEO time gaining (even paying for) valuable backlinks to their WordPress blogs only to waste a significant proportion of that hard earned link benefit by installing so called WordPress SEO plugins that delete/waste that link benefit through nofollow/noindex.
 
-See [Stallion WordPress SEO Plugin](http://www.stallion-theme.com/stallion-wordpress-seo-plugin "WordPress SEO Plugin") for more information and discussion.
+See [Stallion WordPress SEO Plugin](http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ "WordPress SEO Plugin") for more information and discussion.
 
 **NEVER use nofollow**
 
@@ -69,6 +69,21 @@ Canonical basically redirects the link benefit and SEO rankings to the preferred
 
 By adding targeted canonical URLs to sections of a WordPress site we do not want indexing, Google etc... will not index those sections, whilst redirecting the link benefit to the canonical URL (less wasted link benefit). The Stallion WordPress SEO Plugin sets canonical URLs to the home page or the first page of categories, tags and search results archives recycling the link benefit that would be wasted from using noindex robots meta tags.
 
+= WordPress SEO Resources =
+
+For WordPress SEO tips and tutorials, check out the following articles:
+
+* [WordPress SEO Tutorial](http://stallion-theme.co.uk/seo-tutorial-for-wordpress/)
+* [WordPress SEO Tutorial Friendly Permalinks](http://stallion-theme.co.uk/seo-friendly-wordpress-permalinks/)
+* [WordPress SEO Tutorial Title Tag Optimization](http://stallion-theme.co.uk/wordpress-title-element-tag-optimization/)
+* [WordPress SEO Tutorial 301 Redirects](http://stallion-theme.co.uk/wordpress-seo-tutorial-301-redirects/)
+* [WordPress SEO Tutorial Anchor Text](http://stallion-theme.co.uk/wordpress-seo-tutorial-anchor-text/)
+* [WordPress SEO Tutorial Alt Text](http://stallion-theme.co.uk/wordpress-seo-tutorial-alt-text/)
+* [WordPress SEO Tutorial Related Posts Plugins](http://stallion-theme.co.uk/wordpress-seo-tutorial-related-posts-plugins/)
+* [WordPress SEO Tutorial Duplicate Content](http://stallion-theme.co.uk/wordpress-seo-tutorial-duplicate-content-and-canonical-urls/)
+* [WordPress SEO Tutorial Google XML Sitemaps](http://stallion-theme.co.uk/wordpress-seo-tutorial-google-xml-sitemaps/)
+* [WordPress SEO Comments Plugin](http://stallion-theme.co.uk/wordpress-seo-comments-plugin/)
+
 == Installation ==
 
 You can use the built in WordPress plugin installer (under 'Plugins >> Add New : Upload') and plugin upgrader, or you can install the Stallion WordPress SEO plugin manually using FTP.
@@ -91,13 +106,13 @@ To be honest I'm not sure. The plugin does all it's search engine optimization w
 
 To check the SEO plugin is working go to a relevant part of the site and view source in a browser like Firefox, for example if you have "Index First Search Result Only : Block Paged 2,3,4...**" set, do a Search on your site and go to page 2 or higher of the search result, view source and you'll find code like this:
 
-`<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://www.stallion-theme.com/stallion-wordpress-seo-plugin -->
+`<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->
 <link rel="canonical" href="http://example.com/search/keyword/" />
 <!-- Stallion WordPress SEO Plugin -->`
 
 This is a canonical URL to the main search URL, if Google managed to spider a search on your site (it happens a lot) you'll find only one page is indexed. Had you set "Block All Search Results" the canonical URL code would look like this:
 
-`<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://www.stallion-theme.com/stallion-wordpress-seo-plugin -->
+`<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->
 <link rel="canonical" href="http://example.com/" />
 <!-- Stallion WordPress SEO Plugin -->`
 
