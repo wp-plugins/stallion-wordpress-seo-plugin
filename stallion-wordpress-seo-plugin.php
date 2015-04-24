@@ -3,7 +3,7 @@
 Plugin Name: Stallion WordPress SEO Plugin
 Plugin URI: http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/
 Description: Block search engines like Google from indexing sections/pages of your site without deleting valuable link benefit via canonical URLs rather than noindex and nofollow. Other so called WordPress SEO plugins damage your sites search engine optimization by using nofollow (deletes link benefit) and noindex (wastes link benefit). The Stallion WordPress SEO Plugin uses canonical URLs to conserve link benefit.
-Version: 2.0
+Version: 2.1
 Author: David Law
 Author URI: http://stallion-theme.co.uk/
 */
@@ -45,14 +45,14 @@ add_options_page('Stallion WordPress SEO Plugin Options', 'Stallion WordPress SE
 
 function st_seo_notindex_login() {
 if (get_option('st_seo_notindex_login') == "2") {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 function st_seo_notindex_admin() {
 if (get_option('st_seo_notindex_admin') == "2") {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
@@ -60,70 +60,70 @@ echo "<!-- Stallion WordPress SEO Plugin -->\n";
 function st_seo_notindex() {
 if (get_option('st_seo_notindex_date') == "2") {
 if (is_date()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_author') == "2") {
 if (is_author()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_search') == "1") {
 if (is_search()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_search') == "2") {
 if (is_search() || is_search() && is_paged()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_search_link(get_query_var('search'))."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_tags') == "1") {
 if (is_tag()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_tags') == "2") {
 if (is_tag() || is_tag() && is_paged()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_term_link(get_query_var('tag'), 'post_tag')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_category') == "1") {
 if (is_category()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_category') == "2") {
 if (is_category() || is_category() && is_paged()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_category_link(get_query_var('cat'))."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_home') == "1") {
 if (is_home() && !is_paged()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
 
 if (get_option('st_seo_notindex_home') == "2") {
 if (is_home() || is_home() && is_paged()) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
@@ -144,7 +144,7 @@ $st_post_blocked = '1';
 
 global $cpage, $post;
 if (!empty($cpage) && $cpage >= '1' && isset($st_post_blocked) != '1' && (is_single() || is_page())) {
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"" . get_permalink( $post->ID ) . "\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
@@ -163,7 +163,7 @@ if (get_option('st_seo_notindex_posts')) {
 $posts = explode(",", get_option('st_seo_notindex_posts'));
 if (is_single($posts)) {
 remove_action('wp_head', 'rel_canonical');
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
@@ -175,7 +175,7 @@ if (get_option('st_seo_notindex_pages')) {
 $pages = explode(",", get_option('st_seo_notindex_pages'));
 if (is_page($pages)) {
 remove_action('wp_head', 'rel_canonical');
-echo "\n<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
+echo "\n<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->\n";
 echo "<link rel=\"canonical\" href=\"".get_option('home')."\" />\n";
 echo "<!-- Stallion WordPress SEO Plugin -->\n";
 }}
@@ -230,7 +230,8 @@ update_option('st_seo_notindex_posts', $st_seo_notindex_posts);
 
 <h3><?php _e('Block page types and redirect link benefit to the Home page') ?></h3>
 
-<form name="st_seo_notindex_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
+<form name="st_seo_notindex_form" method="post" action="<?php echo esc_url(str_replace( '%7E', '~', $_SERVER['REQUEST_URI'])); ?>">
+<?php wp_nonce_field( 'st_seo_notindex_nonce', 'stallion_wpnonce'); ?>
 <input type="hidden" name="st_seo_notindex_hidden" value="Y">
 <table cellspacing="2" cellpadding="5" border="0" width=100% class="editform">
 <tr valign="top"><td scope="row" width="33%">
@@ -296,9 +297,7 @@ update_option('st_seo_notindex_posts', $st_seo_notindex_posts);
 <td colspan="2">
 <h2><?php _e('Stallion WordPress SEO Plugin Tutorial') ?></h2>
 
-<div style="float:right;">
-<a href="http://stallion-theme.co.uk/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/stallion-wordpress-seo-plugin/stallion-300-250.gif" alt="Stallion SEO Ad Theme" width="300" /></a>
-</div>
+<div style="float:right;"><a href="http://stallion-theme.co.uk/" target="_blank"><?php echo '<img src="' . plugins_url( 'stallion-300-250.gif', __FILE__ ) . '"  alt="Stallion SEO Ad Theme" width="300" > '; ?></a></div>
 
 <p>The page types blocked above will still be spidered by Google etc..., but those pages will NOT be indexed (they will not be found for relevant searches). Links from those blocked pages will be followed, but the link benefit that would be wasted if you noindexed archives etc... is redirected back to the home page or the non paged category/tag/search result.</p>
 
@@ -339,6 +338,6 @@ update_option('st_seo_notindex_posts', $st_seo_notindex_posts);
 </table>
 </form>
 
-<p>See more useful <a href="http://stallion-theme.co.uk/wordpress-seo-plugins/" target="_blank">WordPress Plugins</a>.</p>
+<p>See more useful <a href="http://stallion-theme.co.uk/responsive/wordpress-seo-plugins/" target="_blank">WordPress Plugins</a>.</p>
 </div>
 <?php } ?>

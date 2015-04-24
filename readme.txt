@@ -3,8 +3,8 @@ Contributors: seo-dave
 Donate link: http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/
 Tags: seo, wordpress seo, canonical, noindex, nofollow, meta, google, search engine optimization, search engine, pagerank, link benefit, seo plugin, wordpress seo plugin
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 2.0
+Tested up to: 4.2
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,13 +106,13 @@ To be honest I'm not sure. The plugin does all it's search engine optimization w
 
 To check the SEO plugin is working go to a relevant part of the site and view source in a browser like Firefox, for example if you have "Index First Search Result Only : Block Paged 2,3,4...**" set, do a Search on your site and go to page 2 or higher of the search result, view source and you'll find code like this:
 
-`<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->
+`<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->
 <link rel="canonical" href="http://example.com/search/keyword/" />
 <!-- Stallion WordPress SEO Plugin -->`
 
 This is a canonical URL to the main search URL, if Google managed to spider a search on your site (it happens a lot) you'll find only one page is indexed. Had you set "Block All Search Results" the canonical URL code would look like this:
 
-`<!-- Stallion WordPress SEO Plugin 2.0 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->
+`<!-- Stallion WordPress SEO Plugin 2.1 by David Law http://stallion-theme.co.uk/stallion-wordpress-seo-plugin/ -->
 <link rel="canonical" href="http://example.com/" />
 <!-- Stallion WordPress SEO Plugin -->`
 
@@ -131,6 +131,10 @@ For example theme developers tend to add a sitewide H1 header including the name
 == Screenshots ==
 
 == Changelog ==
+
+= 2.1 =
+* security fix to prevent possible XSS attack.
+* Thanks goes to Joost de Valk (Yoast WordPress SEO Plugin author) for letting me know there was a possible security issue.
 
 = 2.0 =
 * fixed some depreciated code.

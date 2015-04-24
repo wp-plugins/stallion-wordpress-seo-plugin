@@ -1,16 +1,22 @@
+Version 2.1
+2015-04-24 David Law : http://stallion-theme.co.uk/
+
+* security fix to prevent possible XSS angle attack.
+* Thanks goes to Joost de Valk (Yoast WordPress SEO Plugin author) for letting me know there was a possible security issue.
+
 Version 2.0
-2013-09-24 David Law : http://www.stallion-theme.com/
+2013-09-24 David Law : http://stallion-theme.co.uk/
 
 * fixed some depreciated code.
 * finished the block individual posts/pages feature.
 * added canonical support for paged comments.
 
 Version 1.0.1
-2011-11-02 David Law : http://www.stallion-theme.com/
+2011-11-02 David Law : http://stallion-theme.co.uk/
 
 * Small code change to remove PHP warnings (Use of Undefined Constant), had missed out '' around a few constants.
 
 Version 1.0
-2011-06-05 David Law : http://www.stallion-theme.com/
+2011-06-05 David Law : http://stallion-theme.co.uk/
 
 * First release of Stallion WordPress SEO Plugin
