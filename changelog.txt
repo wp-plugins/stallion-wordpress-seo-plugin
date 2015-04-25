@@ -1,3 +1,8 @@
+Version 2.1.1
+2015-04-25 David Law : http://stallion-theme.co.uk/
+
+* sanitized all options, hardening security further.
+
 Version 2.1
 2015-04-24 David Law : http://stallion-theme.co.uk/
 
